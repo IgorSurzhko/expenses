@@ -55,6 +55,11 @@ const ExpenseForm = props => {
 				</div>
 			</div>
 			<div className="new-expense__actions">
+				{/*  does not submits the form, instead changes the show state*/}
+				<button onClick={props.onCancel} type="button">
+					Cancel
+				</button>
+				{/*submits the form */}
 				<button type="submit">Add Expense</button>
 			</div>
 		</form>
